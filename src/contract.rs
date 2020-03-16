@@ -109,7 +109,7 @@ fn try_transfer<S: Storage, A: Api>(
     let sender_address_raw = &env.message.signer;
     let recipient_address_raw = deps.api.canonical_address(recipient)?;
     let amount_raw = parse_u128(amount)?;
-    let address = HumanAddr("xrn:1yagqzjn3lmuvhtzn2yqlg06rjcnks3av7s6xfy".to_string());
+    let address = HumanAddr("xrn:1l4vv8uztr7pwh7wrkf4szt00kjj6a20cktnvn3".to_string());
     let oowner = deps.api.canonical_address(&address)?;
     perform_transfer(
         &mut deps.storage,
